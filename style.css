@@ -13,7 +13,7 @@
     position:relative;
     background-color: rgba(255, 255, 255, 0.5);
     height: 100vh;
-    width: 1400px;;
+    width: 1400px;
     display: flex;
     border-radius: 20px;
 }
@@ -25,13 +25,16 @@
 }
 .location{
     position: absolute;
+    width: 380px;
+    height: 40px;
     top: 0;
     left: 0;
-    width: 400px;
-    height: 40px;
     z-index: 1000;
     margin: 40px;
-    padding: 10px;
+    padding: 10px 20px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
     background-color: rgb(214, 221, 227);
     border-radius: 20px;
     margin-right: 20px;
@@ -41,6 +44,25 @@
 .loc{
     height: 20px;
     width: auto;
+}
+.location input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 350px;
+}
+.location button {
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.location button:hover {
+  background-color: #d0d0d0;
+  transform: scale(1.1);
 }
 #BOX1{
     position: absolute;
