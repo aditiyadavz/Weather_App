@@ -27,12 +27,12 @@ Weather_App/
 
 ---
 
-### 📌 Landing Page - Subject Selection
-<img src="img/LandingPage.png" width="300" />
+### 📌 Home Page
+<img src="img/HomePage.png" width="300" />
 
-### ❓ Quiz in action
-<img src="img/InAction.png" width="200" />
-<img src="img/Result.png" width="200" />
+### Modes (Light / Dark)
+<img src="img/LightMode.png" width="200" />
+<img src="img/DarkMode.png" width="200" />
 
 ---
 
