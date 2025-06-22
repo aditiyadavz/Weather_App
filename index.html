@@ -1,193 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Weather App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <section id="mainContainer">
-        <div style="margin-right: 20px;"class="container">
-            <section id="left">
-            <div class="location">
-                <img class="loc" src="img/loc.png" alt="">
-                <input type="text" id="cityInput" placeholder="Enter city name" />
-                <button onclick="searchWeather()">
-                    <img class="loc" src="img/search.png" alt="Search">
-                </button>
-            </div>
-                <section id="BOX1">
-                    <h1 style="font-size: 40px; margin-top: 35px; margin-bottom: 10px;">28&deg;</h1>
-                    <h3 style="font-size: 20px; margin-top: 0px; margin-bottom: 10px;">Rainy Day</h3>
-                    <p style="font-size: 12px; margin-top: 0px;">Today, expect a rainy day with tempretures reaching a maximum of 28°C. Make sure to grab your umbrella and raincoat before heading out.</p>
-                    <section id="boxes">
-                        <div class="box">
-                            <div class="boxHeader">
-                            <img class="icon" src="img/img9.png" alt="">
-                            <h6>FEELS LIKE</h6>
-                            </div>
-                            <div class="boxFooter">
-                            <h2 style="margin-left: 2px; margin-right: 2px; margin-bottom: 0px; margin-top: 0px;">30°</h2>
-                            <p style="font-size: 14px; margin-top: 1px">Humidity is making it feel warmer</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="boxHeader">
-                            <img class="icon" src="img/img11.png" alt="">
-                            <h6>PRECIPITATION</h6>
-                            </div>
-                            <div class="boxFooter">
-                            <h2 style="margin-left: 2px; margin-right: 2px; margin-bottom: 0px; margin-top: 0px;">2.3''</h2>
-                            <p style="font-size: 14px; margin-top: 1px">2'' expected in 24h</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="boxHeader">
-                            <img class="icon" src="img/img12.png" alt="">
-                            <h6>VISIBILITY</h6>
-                            </div>
-                            <div class="boxFooter">
-                            <h2 style="margin-left: 2px; margin-right: 2px; margin-bottom: 0px; margin-top: 0px;">6 mi</h2>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="boxHeader">
-                            <img class="icon" src="img/img13.png" alt="">
-                            <h6>HUMIDITY</h6>
-                            </div>
-                            <div class="boxFooter">
-                            <h2 style="margin-left: 2px; margin-right: 2px; margin-bottom: 0px; margin-top: 0px;">82%</h2>
-                            <p style="font-size: 14px; margin-top: 1px">The dew point is 25° right now</p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-            </section>
-            <section style="margin-left: 0px;" id="right">
-                <div style="margin-top: 40px;" class="hourly">
-                    <div class="hourlyHeader">
-                    <img class="icon" src="img/img7.png" alt="">
-                    <h6>HOURLY FORECAST</h6>
-                    </div>
-                    <div class="hourlyFooter">
-                        <div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div>
-                        <div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div>
-                        <div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div>
-                        <div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div>
-                        <div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div>
-                        <div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div>
-                        <div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="hourly">
-                    <div class="hourlyHeader">
-                    <img class="icon" src="img/img10.png" alt="">
-                    <h6>7-DAY FORECAST</h6>
-                    </div>
-                    <div class="hourlyFooter">
-                        <div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div>
-                        <div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div><div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div><div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div><div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div><div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div><div class="hourlyFooterBox">
-                            <h5 style="margin-top: 0px; margin-bottom: 15px;">Now</h5>
-                            <h2 style="margin-top: 0px; margin-bottom: 10px;">28&deg</h2>
-                            <img class="hourlyImg" src="img/img14.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="splitHourly">
-                    <div style="margin-right: 20px;" class="half">
-                        <div class="halfHeader">
-                            <img class="hourlyImg" src="img/img9.png" alt="">
-                            <h6>UV INDEX</h6>
-                        </div>
-                        <div class="halfFooter">
-                            <h2 style="margin-top: 15px; margin-bottom: 1px;">3</h2>
-                            <h5 style="margin-top: 0px; margin-bottom: 3px;">Moderate</h5>
-                            <div class="uv-slider-container">
-                                <input type="range" min="1" max="11" value="1" class="uv-slider" id="uvRange">
-                            </div>
-                            <h6>Use sun protection until 16:00</h6>
-                        </div>
-                    </div>
-                    <div style="margin-left: 0px;" class="half">
-                        <div class="halfHeader">
-                            <img class="hourlyImg" src="img/img8.png" alt="">
-                            <h6>WIND</h6>
-                        </div>
-                        <div class="halffooterRight">
-                        <div class="halfFooterR">
-                            <div class="halfFooter1">
-                                <h2 style="margin-top: 25px; margin-bottom: 2px;">3</h2>
-                                <h2 style="margin-top: 22px; margin-bottom: 1px;">9</h2>
-                            </div>
-                            <div class="halfFooter2">
-                                <h5 style="margin-top: 25px; margin-bottom: 1px;">MPH</h5>
-                                <h6 style="margin-top: 0px; margin-bottom: 20px;">Wind</h6>
-                                <h5 style="margin-top: 0px; margin-bottom: 1px;">MPH</h5>
-                                <h6 style="margin-top: 0px; margin-bottom: 1px;">Gusts</h6>
-                            </div>
-                            <div class="halfFooter3">
-                                <img class="compas" src="img/img15.png" alt="">
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-            </section>
+  <div class="toggle-theme">
+    <button id="themeToggle">Toggle 🌙/☀️</button>
+    <button id="unitToggle">Switch to °F</button>
+  </div>
+
+  <div class="weather-app">
+    <h2>🌤️ Weather App</h2>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button onclick="getWeatherByCity()">Search</button>
+    </div>
+
+    <button class="geo-button" onclick="getWeatherByLocation()">📍 Use My Location</button>
+
+    <div id="loading" class="loading" style="display: none;">Loading...</div>
+
+    <div id="error" class="error"></div>
+
+    <div class="weather-info" id="weatherInfo">
+      <div class="current-weather">
+        <div class="emoji" id="weatherEmoji">
+          <img src="" alt="Weather Icon" width="60" height="60" />
         </div>
-    </section>
-    <script src="script.js"></script>
+        <div class="temp" id="temperature">--°C</div>
+        <div class="condition" id="condition">Condition</div>
+        <div id="location">City, Country</div>
+        <div class="hi-low" id="hiLow">H: --°C / L: --°C</div>
+        <div class="wind" id="windSpeed">Wind: -- m/s</div>
+      </div>
+
+      <div id="extras" class="extras-cards"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
