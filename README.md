@@ -30,7 +30,7 @@ Weather_App/
 ### 📌 Home Page
 <img src="img/HomePage.png" width="300" />
 
-### Modes (Light / Dark)
+### ☀️/🌙 Modes (Light / Dark)
 <img src="img/LightMode.png" width="200" />
 <img src="img/DarkMode.png" width="200" />
 
